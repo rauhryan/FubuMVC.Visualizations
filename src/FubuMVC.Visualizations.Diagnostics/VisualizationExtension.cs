@@ -1,5 +1,6 @@
 using FubuMVC.Core;
 using FubuMVC.Diagnostics;
+//using FubuMVC.Sass;
 
 namespace FubuMVC.Visualizations.Diagnostics
 {
@@ -7,7 +8,11 @@ namespace FubuMVC.Visualizations.Diagnostics
     {
         public void Configure(FubuRegistry registry)
         {
-            registry.Import<VisualizationFubuRegistry>(DiagnosticsRegistration.DIAGNOSTICS_URL_ROOT);
+//            registry
+//                .Import<SassExtension>();
+
+             registry
+                 .Import<VisualizationFubuRegistry>(DiagnosticsRegistration.DIAGNOSTICS_URL_ROOT);
         }
     }
 }
