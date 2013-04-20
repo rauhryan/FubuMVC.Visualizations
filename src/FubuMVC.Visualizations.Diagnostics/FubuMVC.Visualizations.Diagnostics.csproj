@@ -135,6 +135,9 @@
   <ItemGroup>
     <Content Include="Content\styles\fubu.visualizations.css" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Endpoints\Visualizations\IndexVisualizations.spark" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

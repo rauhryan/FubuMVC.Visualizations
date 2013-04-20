@@ -12,12 +12,16 @@ namespace FubuMVC.Visualizations.Diagnostics.Endpoints.Visualizations
             _requirements = requirements;
         }
 
-        public HtmlTag get_visualizations(VisualizationRequest request)
+        public VisualizationModel get_visualizations(VisualizationRequest request)
          {
 
             _requirements.Require("fubu.visualizations.css");
-             return new HtmlTag("h1").Text("Herp Derp");
+             return new VisualizationModel();
          }
+    }
+
+    public class VisualizationModel
+    {
     }
 
     public class VisualizationRequest
