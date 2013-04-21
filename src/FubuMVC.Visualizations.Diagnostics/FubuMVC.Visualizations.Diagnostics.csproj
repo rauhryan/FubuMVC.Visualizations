@@ -110,6 +110,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Endpoints\Visualizations\Assets\AssetsEndpoint.cs" />
     <Compile Include="Endpoints\Visualizations\VisualizationsEndpoint.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -120,6 +121,8 @@
     <Compile Include="VisualizationFubuRegistry.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\scripts\d3.v3.min.js" />
+    <Content Include="Content\scripts\graph.assets.dependencies.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -129,14 +132,18 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\styles\fubu.visualizations.css" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\sass\fubu.visualizations.scss" />
+    <None Include="Content\sass\ie.scss" />
+    <None Include="Content\sass\print.scss" />
+    <None Include="Content\sass\screen.scss" />
+    <None Include="Endpoints\Visualizations\Assets\IndexAssets.spark" />
     <None Include="Endpoints\Visualizations\IndexVisualizations.spark" />
+    <None Include="Shared\_global.spark" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

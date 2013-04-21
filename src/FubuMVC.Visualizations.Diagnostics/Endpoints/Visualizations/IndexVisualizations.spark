@@ -1,5 +1,9 @@
 ﻿<viewdata model="FubuMVC.Visualizations.Diagnostics.Endpoints.Visualizations.VisualizationModel" />
+<use namespace="FubuMVC.Visualizations.Diagnostics.Endpoints.Visualizations" />
+<use namespace="FubuMVC.Visualizations.Diagnostics.Endpoints.Visualizations.Assets" />
 
 <h1>Herp derp</h1>
 
 <h2>Sub herp</h2>
+
+${ this.Partial(new AssetRequest())  }

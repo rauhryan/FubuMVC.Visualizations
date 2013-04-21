@@ -1,0 +1,7 @@
+﻿<viewdata model="FubuMVC.Visualizations.Diagnostics.Endpoints.Visualizations.Assets.AssetModel" />
+<use namespace="FubuMVC.Visualizations.Diagnostics.Endpoints.Visualizations.Assets" />
+
+#{ this.Asset("d3.v3.min.js","graph.assets.dependencies.js"); }
+
+
+<div class="fb-graph" data-url="${this.Urls.UrlFor(new AssetDependenciesRequest(){ type = 'js'})}"></div>

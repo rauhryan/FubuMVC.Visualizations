@@ -2,3 +2,45 @@
 body {
   background-color: #f7f7f7;
 }
+
+/* line 11, ../sass/fubu.visualizations.scss */
+path.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+/* line 17, ../sass/fubu.visualizations.scss */
+marker#licensing {
+  fill: green;
+}
+
+/* line 21, ../sass/fubu.visualizations.scss */
+path.link.licensing {
+  stroke: green;
+}
+
+/* line 25, ../sass/fubu.visualizations.scss */
+path.link.resolved {
+  stroke-dasharray: 0, 2 1;
+}
+
+/* line 29, ../sass/fubu.visualizations.scss */
+circle {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+/* line 35, ../sass/fubu.visualizations.scss */
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+/* line 40, ../sass/fubu.visualizations.scss */
+text.shadow {
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-opacity: .8;
+}
